@@ -1,4 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { IonSlides } from '@ionic/angular';
 import { Router } from '@angular/router';
 
@@ -13,7 +14,8 @@ export class Tab1Page {
   @ViewChild('slides') slides: IonSlides;
   
   constructor(
-     private route: Router) {}
+    private router: Router
+  ) {}
 
   ionViewWillLeave(){
     this.slides.stopAutoplay();
@@ -33,5 +35,8 @@ export class Tab1Page {
   
   goSummon(){
     this.route.navigateByUrl('summon')
+  }
+  goModule(page) {
+    this.router.navigateByUrl(page);
   }
 }

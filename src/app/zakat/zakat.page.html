@@ -1,0 +1,128 @@
+<ion-content [fullscreen]="true">
+  <div style="background-color: #4CAF50; height: 25%;"></div>
+</ion-content>
+<div class="menu-module">
+<ion-row>
+  <ion-row>
+    <p class="menu-title-module">Zakat</p>
+    <div class="menu-circle-module center zakat">
+      <img style="height: 40px" src="assets/images/icons/cash.png">
+    </div>
+  </ion-row>
+</ion-row>
+<div *ngIf="type == true">
+  <ion-row style="margin-top: 70px;">
+    <div (click)="goCheck()" class="menu-card">
+      <div class="ion-text-center menu-card-title">Zakat Pendapatan</div>
+    </div>
+    <div (click)="goCheck()" class="menu-card">
+      <div class="ion-text-center menu-card-title">Zakat Peniagaan</div>
+    </div>
+    <div (click)="goCheck()" class="menu-card">
+      <div class="ion-text-center menu-card-title">Zakat KWSP</div>
+    </div>
+    <div (click)="goCheck()" class="menu-card">
+      <div class="ion-text-center menu-card-title">Zakat Emas</div>
+    </div>
+    <div (click)="goCheck()" class="menu-card">
+      <div class="ion-text-center menu-card-title">Zakat Saham</div>
+    </div>
+  </ion-row>
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 420px;">
+    <ion-col>
+      <!-- <ion-button class="zakat-button" style="margin: auto;" expand="block" share="round" (click)="goCheck()">Calculate</ion-button> -->
+      <ion-button class="zakat-button" style="margin: auto; margin-top: 10px" expand="block" share="round" (click)="goView()">Payment History</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<div *ngIf="message == true">
+  <div style="margin-top: 80px;" id="e45_203-mini">
+    <ion-card-content>
+      <ion-row>
+        <ion-col>
+          <ion-card-subtitle style="font-style: normal; margin-top: 20px;">
+            Tahun/Haul
+          </ion-card-subtitle>
+        </ion-col>
+        <ion-col class="input-form">
+          2020
+        </ion-col>
+      </ion-row>
+      <ion-row style="margin-top: 20px;">
+        <ion-col size="7">
+          <ion-card-subtitle>
+            Amaun Nisab
+          </ion-card-subtitle>
+        </ion-col>
+        <ion-col>
+          <ion-card-subtitle>
+            RM1527.80
+          </ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </div>
+  <div id="e45_203-mini" style="margin-top: 10px;">
+    <ion-card-content>
+      <ion-row>
+        <ion-col>
+          <ion-card-subtitle style="font-style: normal; margin-top: 20px;">
+            Jumlah Layak Di Zakat
+          </ion-card-subtitle>
+        </ion-col>
+        <ion-col class="input-form">
+          RM 20.00
+        </ion-col>
+      </ion-row>
+      <ion-row style="margin-top: 0px;">
+        <ion-col>
+          <ion-card-subtitle style="font-style: normal; margin-top: 20px;">
+            Jumlah Zakat
+          </ion-card-subtitle>
+        </ion-col>
+        <ion-col class="input-form">
+          RM 10.00
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </div>
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 420px;">
+    <ion-col>
+      <ion-button class="zakat-button" style="margin: auto;" expand="block" share="round" (click)="goSubmit()">Pay</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<div *ngIf="view == true">
+  <div style="margin-top: 80px" id="e45_203-mini">
+    <ion-card-content>
+      <ion-card-subtitle>
+        12/05/2020
+      </ion-card-subtitle>
+      <ion-card-subtitle style="font-size: large">
+        Zakat KWSP
+      </ion-card-subtitle>
+      <ion-card-subtitle style="color: #749D65; font-size: 20px;">
+        RM300
+      </ion-card-subtitle>
+    </ion-card-content>
+  </div>
+  <div style="margin-top: 15px" id="e45_203-mini">
+    <ion-card-content>
+      <ion-card-subtitle>
+        12/05/2020
+      </ion-card-subtitle>
+      <ion-card-subtitle style="font-size: large">
+        Zakat Pendapatan
+      </ion-card-subtitle>
+      <ion-card-subtitle style="color: #749D65; font-size: 20px;">
+        RM50
+      </ion-card-subtitle>
+    </ion-card-content>
+  </div>
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 400px;">
+    <ion-col>
+      <ion-button class="zakat-button" style="margin: auto;" expand="block" share="round" (click)="goBack()">Back</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+</div>

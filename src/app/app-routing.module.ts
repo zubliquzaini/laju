@@ -5,7 +5,8 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },  {
+  },
+  {
     path: 'summon-menu',
     loadChildren: () => import('./summon-menu/summon-menu.module').then( m => m.SummonMenuPageModule)
   },
@@ -16,6 +17,26 @@ const routes: Routes = [
   {
     path: 'compound',
     loadChildren: () => import('./compound/compound.module').then( m => m.CompoundPageModule)
+  },
+  {
+    path: 'complaint',
+    loadChildren: () => import('./complaint/complaint.module').then( m => m.ComplaintPageModule)
+  },
+  {
+    path: 'zakat',
+    loadChildren: () => import('./zakat/zakat.module').then( m => m.ZakatPageModule)
+  },
+  {
+    path: 'hall',
+    loadChildren: () => import('./hall/hall.module').then( m => m.HallPageModule)
+  },
+  {
+    path: 'ferry',
+    loadChildren: () => import('./ferry/ferry.module').then( m => m.FerryPageModule)
+  },
+  {
+    path: 'zakat-payment',
+    loadChildren: () => import('./zakat-payment/zakat-payment.module').then( m => m.ZakatPaymentPageModule)
   }
 
 ];
