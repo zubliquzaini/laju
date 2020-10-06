@@ -1,0 +1,101 @@
+<ion-content [fullscreen]="true">
+  <div style="background-color: #00BCD4; height: 25%;"></div>
+</ion-content>
+<div class="menu-module">
+<ion-row>
+  <ion-row>
+    <p class="menu-title-module">Ferry</p>
+    <div class="menu-circle-module center ferry">
+      <img style="height: 40px" src="assets/images/icons/ship.png">
+    </div>
+  </ion-row>
+</ion-row>
+<div *ngIf="type == true">
+  <ion-row style="margin-top: 60px;">
+    <ion-datetime class="input-form" displayFormat="HH:mm" placeholder="Select Time" [(ngModel)]="time"></ion-datetime>
+    <ion-datetime class="input-form" displayFormat="DD MM YYYY" placeholder="Select Date" [(ngModel)]="date"></ion-datetime>
+    <ion-select class="input-form" value="Labuan" okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="Labuan">Labuan</ion-select-option>
+      <ion-select-option value="Menumbuk">Menumbuk</ion-select-option>
+      <ion-select-option value="Muara">Muara</ion-select-option>
+    </ion-select>
+    <ion-select class="input-form" value="Menumbuk" okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="Labuan">Labuan</ion-select-option>
+      <ion-select-option value="Menumbuk">Menumbuk</ion-select-option>
+      <ion-select-option value="Muara">Muara</ion-select-option>
+    </ion-select>
+  </ion-row>
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 350px;">
+    <ion-col>
+      <ion-button class="ferry-button" style="margin: auto;" expand="block" share="round" (click)="goCheck()">Continue</ion-button>
+      <ion-button class="ferry-button" style="margin: auto; margin-top: 10px" expand="block" share="round" (click)="goView()">View Booking</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<div *ngIf="message == true">
+  <div style="margin-top: 80px;" id="e45_203-mini">
+    <ion-card-content>
+      <ion-card-subtitle style="font-size: large">
+        12/05/2020
+      </ion-card-subtitle>
+      <ion-card-subtitle>
+        9:00 AM
+      </ion-card-subtitle>
+      <ion-card-subtitle style="color: #009688; font-size: 20px;">
+        Labuan to Menumbuk
+      </ion-card-subtitle>
+      <ion-card-subtitle>
+        Bot Express 3688
+      </ion-card-subtitle>
+    </ion-card-content>
+  </div>
+  <div id="e45_203-mini">
+    <ion-card-content>
+      <ion-card-subtitle style="font-size: large">
+        12/05/2020
+      </ion-card-subtitle>
+      <ion-card-subtitle>
+        11:00 AM
+      </ion-card-subtitle>
+      <ion-card-subtitle style="color: #009688; font-size: 20px;">
+        Labuan to Menumbuk
+      </ion-card-subtitle>
+      <ion-card-subtitle>
+        Bot Express 3688
+      </ion-card-subtitle>
+    </ion-card-content>
+    </div>
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 420px;">
+    <ion-col>
+      <ion-button class="ferry-button" style="margin: auto;" expand="block" share="round" (click)="goSubmit()">Back</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<div *ngIf="view == true">
+  <div style="margin-top: 80px" id="e45_203">
+    <ion-card-content>
+      <ion-card-subtitle style="font-style: normal;">
+        Booking Status
+      </ion-card-subtitle>
+      <ion-card-subtitle style="font-size: 20px;">
+        Labuan to Menumbuk
+      </ion-card-subtitle>
+      <ion-row>
+        <ion-col size="7">
+          <ion-card-subtitle style="color: #009688; font-size: 20px;">
+            Approved
+          </ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+      <ion-card-subtitle style="font-style: normal;">
+        31/09/2020 9:00am
+      </ion-card-subtitle>
+    </ion-card-content>
+  </div>
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 420px;">
+    <ion-col>
+      <ion-button class="ferry-button" style="margin: auto;" expand="block" share="round" (click)="goBack()">Back</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+</div>

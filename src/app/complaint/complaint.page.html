@@ -1,0 +1,83 @@
+<ion-content [fullscreen]="true">
+  <div style="background-color: #9e9e9e; height: 25%;"></div>
+</ion-content>
+<div class="menu-module">
+<ion-row>
+  <ion-row>
+    <p class="menu-title-module">Complaint</p>
+    <div class="menu-circle-module center complaint">
+      <img style="height: 40px;" src="assets/images/icons/complaint.png">
+    </div>
+  </ion-row>
+</ion-row>
+<div *ngIf="type == true">
+  <ion-row>
+    <ion-select style="top: 80px" class="input-form" value="Majlis" okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="Majlis">Aduan</ion-select-option>
+      <ion-select-option value="Program">Bukan Aduan</ion-select-option>
+      <ion-select-option value="Karnival">Penyenggeraaan</ion-select-option>
+      <ion-select-option value="Karnival">Cadangan</ion-select-option>
+      <ion-select-option value="Karnival">Orang Awan</ion-select-option>
+    </ion-select>
+    <ion-select style="top: 90px" class="input-form" value="Majlis" okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="Majlis">Kaunter Khidmat Pelanggan</ion-select-option>
+      <ion-select-option value="Program">Pelancongan</ion-select-option>
+      <ion-select-option value="Karnival">Perlesenan</ion-select-option>
+      <ion-select-option value="Karnival">Kewangan</ion-select-option>
+      <ion-select-option value="Karnival">Lanskap</ion-select-option>
+    </ion-select>
+    <ion-select style="top: 100px" class="input-form" value="Majlis" okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="Majlis">Jabatan Kewangan</ion-select-option>
+      <ion-select-option value="Program">Jabatan Audit Dalam</ion-select-option>
+      <ion-select-option value="Karnival">Jabatan Perlesenan</ion-select-option>
+      <ion-select-option value="Karnival">Jabatan Khidmat Pengurusan</ion-select-option>
+      <ion-select-option value="Karnival">Unit Integrity</ion-select-option>
+    </ion-select>
+  </ion-row>
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 350px;">
+    <ion-col>
+      <ion-button class="complaint-button" style="margin: auto;" expand="block" share="round" (click)="goCheck()">Continue</ion-button>
+      <ion-button class="complaint-button" style="margin: auto; margin-top: 10px" expand="block" share="round" (click)="goView()">View Complaint</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<div *ngIf="message == true">
+  <ion-input style="top: 80px" class="input-form" autocomplete="off" type="text" name="title" placeholder="Complaint Title" [(ngModel)]="comptitle"></ion-input>
+  <ion-textarea style="top: 90px" class="input-form text-input" autocomplete="off" type="text" name="description" placeholder="Description" [(ngModel)]="compdescription"></ion-textarea>
+  <ion-input style="top: 100px" class="input-form" autocomplete="off" type="text" name="outcomet" placeholder="Expected Outcome" [(ngModel)]="compoutcome"></ion-input>
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 350px;">
+    <ion-col>
+      <ion-button class="complaint-button" style="margin: auto;" expand="block" share="round" (click)="goSubmit()">Submit Complaint</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<div *ngIf="view == true">
+  <div style="margin-top: 80px" id="e45_203">
+    <ion-card-content>
+      <ion-card-subtitle style="font-style: normal;">
+        Complaint Feedback
+      </ion-card-subtitle>
+      <ion-card-subtitle style="font-size: 20px;">
+        Aduan
+      </ion-card-subtitle>
+      <ion-row>
+          <ion-card-subtitle style="color: #009688; font-size: 15px;">
+            Jabatan Khidmat Masyarakat
+          </ion-card-subtitle>
+      </ion-row>
+      <ion-card-subtitle style="font-style: normal;">
+        31/09/2020 9:00am
+      </ion-card-subtitle>
+      <ion-card-subtitle style="margin-top: 20px;">
+        Kami telah melihat aduan yang diterima. Aduan tersebut akan diselesaikan secepat mungkin.
+      </ion-card-subtitle>
+    </ion-card-content>
+  </div>
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 420px;">
+    <ion-col>
+      <ion-button class="complaint-button" style="margin: auto;" expand="block" share="round" (click)="goBack()">Back</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+</div>
+

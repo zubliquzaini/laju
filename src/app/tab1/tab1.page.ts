@@ -1,4 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { IonSlides } from '@ionic/angular';
 import { Router } from '@angular/router';
 
@@ -34,5 +35,15 @@ export class Tab1Page {
 
   goLicense() {
     this.router.navigateByUrl('license');
+  }
+  goSummonMenu(){
+    this.route.navigateByUrl('summon-menu')
+  }
+  
+  goSummon(){
+    this.route.navigateByUrl('summon')
+  }
+  goModule(page) {
+    this.router.navigateByUrl(page);
   }
 }
