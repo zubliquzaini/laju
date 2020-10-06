@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path: 'ferry',
     loadChildren: () => import('./ferry/ferry.module').then( m => m.FerryPageModule)
+  },
+  {
+    path: 'zakat-payment',
+    loadChildren: () => import('./zakat-payment/zakat-payment.module').then( m => m.ZakatPaymentPageModule)
   }
 ];
 @NgModule({

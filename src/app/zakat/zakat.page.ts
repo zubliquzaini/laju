@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-zakat',
@@ -10,7 +11,9 @@ export class ZakatPage implements OnInit {
   type: boolean = true;
   view: boolean = false;
 
-  constructor() { }
+  constructor(
+    private alertCtrl: AlertController
+  ) { }
 
   ngOnInit() {
   }
@@ -21,6 +24,7 @@ export class ZakatPage implements OnInit {
   }
 
   goSubmit() {
+    this.presentAlert();
     this.type = true;
     this.message = false;
   }
@@ -35,5 +39,14 @@ export class ZakatPage implements OnInit {
     this.view = false;
     this.type = true;
     this.message = false;
+  }
+
+  async presentAlert() {
+    const alert = await this.alertCtrl.create({
+      header: 'Payment Successful',
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
 }
