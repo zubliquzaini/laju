@@ -1,0 +1,69 @@
+<ion-content  style="margin-top: 50px; ">
+  <img style="height: 15%; width: 100%; object-fit: cover; background-color: darkorange;" >
+
+  <div>
+    <ion-row style="padding-top: 10px;">
+      <ion-col size="10"  >
+        <ion-card-subtitle  style="font-size:20px; margin-top: 25px; margin-left: 240px; color:rgb(0, 0, 0);">
+          Parking
+        </ion-card-subtitle>
+      </ion-col>
+      <ion-col>
+        <div >
+          <img style="height: 45px" src="assets/images/icons/parking.png">
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+ <div class="col">
+ </div>
+
+ <div style="border-bottom: 1px solid #a30000; padding-bottom: 20px;">
+  <ion-input class="input-form" autocomplete="off" type="text" name="platenumber" placeholder="Plate Number" [(ngModel)]="platenumber"></ion-input>
+  <ion-button class="parking-button" style="margin: auto; margin-top: 15px; width: 35%;" expand="block" share="round" (click)="registerAction()">Add</ion-button>
+</div>
+<div class="vehicles-border" style="margin-top: 5%;">
+  <ion-row>
+    <ion-col size="9">
+      <ion-card-subtitle style="font-size: 20px; margin-top: 15px" class="ion-text-center">LA 3000</ion-card-subtitle>
+    </ion-col>
+    <ion-col>
+      <ion-button class="parking-button">
+        <ion-icon class="ion-text-center" name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<div class="vehicles-border" style="margin-top: 5%;">
+  <ion-row>
+    <ion-col size="9">
+      <ion-card-subtitle style="font-size: 20px; margin-top: 15px" class="ion-text-center">LA 8080</ion-card-subtitle>
+    </ion-col>
+    <ion-col>
+      <ion-button class="parking-button">
+        <ion-icon class="ion-text-center" name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<div class="vehicles-border" style="margin-top: 5%;">
+  <ion-row>
+    <ion-col size="9">
+        <ion-card-subtitle style="font-size: 20px; margin-top: 15px" class="ion-text-center">LA 5757</ion-card-subtitle>
+    </ion-col>
+    <ion-col>
+      <ion-button class="parking-button">
+        <ion-icon class="ion-text-center" name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+</ion-content>
+
+
+
+
+
+
+
