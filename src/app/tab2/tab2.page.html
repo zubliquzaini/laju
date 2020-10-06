@@ -1,17 +1,69 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <img style="height: 25%; width: 100%; object-fit: cover;" src="assets/images/laju.png">
 </ion-content>
+<div class="menu-home">
+  <ion-avatar>
+    <ion-icon name="person-circle-outline"></ion-icon>
+  </ion-avatar>
+  <div>
+    <div style="color: #184F79; font-size: 20px; font-weight: bolder;" class="ion-text-center">
+      Siti Aminah 
+      </div>
+      <ion-row style="width: 80%; margin: auto;">
+        <ion-col style="margin-top: 15px;">
+          Mykad
+        </ion-col>
+        <ion-col size="9">
+          <ion-input class="input-form-account" autocomplete="off" type="text" name="text" placeholder="Mykad Number" value="900414-10-2307"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row style="width: 80%; margin: auto;">
+        <ion-col style="margin-top: 15px;">
+          Email
+        </ion-col>
+        <ion-col size="9">
+          <ion-input class="input-form-account" autocomplete="off" type="email" name="email" placeholder="Email" value="aminah@gmail.com"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row style="width: 80%; margin: auto;">
+        <ion-col style="margin-top: 15px;">
+          Address
+        </ion-col>
+        <ion-col size="9">
+          <ion-textarea style="height: 80px;" class="input-form-account" autocomplete="off" type="text" name="address" placeholder="Address" value="Simpang 28, Kampung Pancur hitam"></ion-textarea>
+        </ion-col>
+      </ion-row>
+  </div>
+  <!-- <div *ngIf="type == 'company'">
+    <div class="ion-text-center" style="color: #184F79; font-size: 20px; font-weight: bolder; margin: 10px;">
+      Company Information
+    </div>
+    <ion-row style="width: 80%; margin: auto;">
+      <ion-col style="margin-top: 15px;">
+        Registration
+      </ion-col>
+      <ion-col size="8">
+        <ion-input class="input-form-account" autocomplete="off" type="text" name="companyregnumber" placeholder="Company Registration Number" [(ngModel)]="mykad"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row style="width: 80%; margin: auto;">
+      <ion-col style="margin-top: 15px;">
+        Name
+      </ion-col>
+      <ion-col size="8">
+        <ion-input class="input-form-account" autocomplete="off" type="text" name="companyname" placeholder="Company Name" [(ngModel)]="fullname"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row style="width: 80%; margin: auto;">
+      <ion-col style="margin-top: 15px;">
+        Address
+      </ion-col>
+      <ion-col size="8">
+        <ion-textarea class="input-form-account" autocomplete="off" type="text" name="companyaddress" placeholder="Company Address" row="3" [(ngModel)]="address"></ion-textarea>
+      </ion-col>
+    </ion-row>
+  </div> -->
+  <div style="width: 80%; margin: auto; margin-top: 20px;">
+    <ion-button style="margin-top: 15px;" class="account-button" expand="block" type="submit" share="round" (click)="goLogin()">Logout</ion-button>
+  </div>
+</div>

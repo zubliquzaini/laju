@@ -14,12 +14,12 @@
   <ion-row style="margin-top: 60px;">
     <ion-datetime class="input-form" displayFormat="HH:mm" placeholder="Select Time" [(ngModel)]="time"></ion-datetime>
     <ion-datetime class="input-form" displayFormat="DD MM YYYY" placeholder="Select Date" [(ngModel)]="date"></ion-datetime>
-    <ion-select class="input-form" value="Labuan" okText="Okay" cancelText="Dismiss">
+    <ion-select class="input-form" value="Labuan" okText="Ok" cancelText="Dismiss">
       <ion-select-option value="Labuan">Labuan</ion-select-option>
       <ion-select-option value="Menumbuk">Menumbuk</ion-select-option>
       <ion-select-option value="Muara">Muara</ion-select-option>
     </ion-select>
-    <ion-select class="input-form" value="Menumbuk" okText="Okay" cancelText="Dismiss">
+    <ion-select class="input-form" value="Menumbuk" okText="Ok" cancelText="Dismiss">
       <ion-select-option value="Labuan">Labuan</ion-select-option>
       <ion-select-option value="Menumbuk">Menumbuk</ion-select-option>
       <ion-select-option value="Muara">Muara</ion-select-option>
@@ -27,7 +27,7 @@
   </ion-row>
   <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 350px;">
     <ion-col>
-      <ion-button class="ferry-button" style="margin: auto;" expand="block" share="round" (click)="goCheck()">Continue</ion-button>
+      <ion-button class="ferry-button" style="margin: auto;" expand="block" share="round" (click)="goCheck()">Check Schedule</ion-button>
       <ion-button class="ferry-button" style="margin: auto; margin-top: 10px" expand="block" share="round" (click)="goView()">View Booking</ion-button>
     </ion-col>
   </ion-row>
@@ -41,7 +41,7 @@
       <ion-card-subtitle>
         9:00 AM
       </ion-card-subtitle>
-      <ion-card-subtitle style="color: #009688; font-size: 20px;">
+      <ion-card-subtitle style="color: #00BCD4; font-size: 20px;">
         Labuan to Menumbuk
       </ion-card-subtitle>
       <ion-card-subtitle>
@@ -49,7 +49,7 @@
       </ion-card-subtitle>
     </ion-card-content>
   </div>
-  <div id="e45_203-mini">
+  <!-- <div id="e45_203-mini">
     <ion-card-content>
       <ion-card-subtitle style="font-size: large">
         12/05/2020
@@ -64,8 +64,8 @@
         Bot Express 3688
       </ion-card-subtitle>
     </ion-card-content>
-    </div>
-  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 420px;">
+    </div> -->
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 360px;">
     <ion-col>
       <ion-button class="ferry-button" style="margin: auto;" expand="block" share="round" (click)="goSubmit()">Back</ion-button>
     </ion-col>
@@ -82,7 +82,7 @@
       </ion-card-subtitle>
       <ion-row>
         <ion-col size="7">
-          <ion-card-subtitle style="color: #009688; font-size: 20px;">
+          <ion-card-subtitle style="color: #00BCD4; font-size: 20px;">
             Approved
           </ion-card-subtitle>
         </ion-col>
@@ -92,7 +92,7 @@
       </ion-card-subtitle>
     </ion-card-content>
   </div>
-  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 420px;">
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 360px;">
     <ion-col>
       <ion-button class="ferry-button" style="margin: auto;" expand="block" share="round" (click)="goBack()">Back</ion-button>
     </ion-col>

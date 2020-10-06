@@ -1,0 +1,12 @@
+<ion-content class="footer-account">
+  <h4 class="laju-title ion-text-center">Laju</h4>
+  <div style="margin-top: 15%;">
+    <ion-input class="input-form" autocomplete="off" type="email" name="email" placeholder="Email" [(ngModel)]="email"></ion-input>
+    <ion-input class="input-form" autocomplete="off" type="password" name="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+  </div>
+  <!-- TODO change to link. Create transition and the forgot password new page -->
+  <ion-button class="account-button" style="width: 35%; margin: auto; margin-top: 10%" expand="block" share="round" color="primary" (click)="loginAction()">Login</ion-button>
+  <ion-row>
+    <p style="margin: auto; margin-top: 20%; color: #125285;" routerLink='/register' color="primary" fill="outline" size="small">Create Account</p>
+  </ion-row>
+</ion-content>

@@ -12,23 +12,23 @@
 </ion-row>
 <div *ngIf="type == true">
   <ion-row>
-    <ion-select style="top: 80px" class="input-form" value="Perbadanan" okText="Okay" cancelText="Dismiss">
+    <ion-select style="top: 80px" class="input-form" value="Perbadanan" okText="Ok" cancelText="Dismiss">
       <ion-select-option value="Perbadanan">Dewan Perbadanan</ion-select-option>
       <ion-select-option value="Taman">Dewan Taman Perumahan</ion-select-option>
     </ion-select>
-    <ion-select style="top: 90px" class="input-form" value="Majlis" okText="Okay" cancelText="Dismiss">
+    <ion-select style="top: 90px" class="input-form" value="Majlis" okText="Ok" cancelText="Dismiss">
       <ion-select-option value="Majlis">Majlis</ion-select-option>
       <ion-select-option value="Program">Program</ion-select-option>
       <ion-select-option value="Karnival">Karnival</ion-select-option>
     </ion-select>
-    <ion-select style="top: 100px" class="input-form" value="Berhawa Dingin" okText="Okay" cancelText="Dismiss">
+    <ion-select style="top: 100px" class="input-form" value="Berhawa Dingin" okText="Ok" cancelText="Dismiss">
       <ion-select-option value="Berhawa Dingin">Berhawa Dingin</ion-select-option>
       <ion-select-option value="Tidak Berhawa Dingin">Tidak Berhawa Dingin</ion-select-option>
     </ion-select>
   </ion-row>
-  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 350px;">
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 360px;">
     <ion-col>
-      <ion-button class="public-button" style="margin: auto;" expand="block" share="round" (click)="goCheck()">Continue</ion-button>
+      <ion-button class="public-button" style="margin: auto;" expand="block" share="round" (click)="goCheck()">Check Rate</ion-button>
       <ion-button class="public-button" style="margin: auto; margin-top: 10px" expand="block" share="round" (click)="goView()">View Booking</ion-button>
     </ion-col>
   </ion-row>
@@ -54,7 +54,7 @@
       </ion-row>
     </ion-card-content>
   </div>
-  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 420px;">
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 380px;">
     <ion-col>
       <ion-button class="public-button" style="margin: auto;" expand="block" share="round" (click)="goSubmit()">Back</ion-button>
     </ion-col>
@@ -81,7 +81,7 @@
       </ion-card-subtitle>
     </ion-card-content>
   </div>
-  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 420px;">
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 380px;">
     <ion-col>
       <ion-button class="public-button" style="margin: auto;" expand="block" share="round" (click)="goBack()">Back</ion-button>
     </ion-col>

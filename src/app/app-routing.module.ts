@@ -41,9 +41,6 @@ const routes: Routes = [
   {
     path: 'advertising-details',
     loadChildren: () => import('./advertising-details/advertising-details.module').then( m => m.AdvertisingDetailsPageModule)
-  }
-
-=======
   },
   {
     path: 'summon-menu',
@@ -76,7 +73,19 @@ const routes: Routes = [
   {
     path: 'zakat-payment',
     loadChildren: () => import('./zakat-payment/zakat-payment.module').then( m => m.ZakatPaymentPageModule)
+  },  {
+    path: 'cukai',
+    loadChildren: () => import('./cukai/cukai.module').then( m => m.CukaiPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   }
+
 ];
 @NgModule({
   imports: [

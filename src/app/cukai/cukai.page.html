@@ -1,0 +1,76 @@
+<ion-content [fullscreen]="true">
+  <div style="background-color: #E91E63; height: 25%;"></div>
+</ion-content>
+<div class="menu-module">
+<ion-row>
+  <ion-row>
+    <p class="menu-title-module">Cukai</p>
+    <div class="menu-circle-module center cukai">
+      <img style="height: 40px" src="assets/images/icons/taxes.png">
+    </div>
+  </ion-row>
+</ion-row>
+<div *ngIf="type == true">
+  <ion-row style="margin-top: 70px;">
+    <div (click)="goCheck()" class="menu-card">
+      <div class="ion-text-center menu-card-title">Cukai Tanah</div>
+    </div>
+    <div (click)="goCheck()" class="menu-card">
+      <div class="ion-text-center menu-card-title">Cukai Pintu</div>
+    </div>
+    <div (click)="goCheck()" class="menu-card">
+      <div class="ion-text-center menu-card-title">Cukai Peniagaan</div>
+    </div>
+    <div (click)="goCheck()" class="menu-card">
+      <div class="ion-text-center menu-card-title">Cukai Import</div>
+    </div>
+  </ion-row>
+</div>
+<div *ngIf="message == true">
+  <div style="margin-top: 80px" id="e45_203">
+    <ion-card-content>
+      <ion-card-subtitle style="font-size: large">
+        Cukai Tanah
+      </ion-card-subtitle>
+      <ion-card-subtitle>
+        900815084755
+      </ion-card-subtitle>
+      <ion-card-subtitle style="color: #FF4081; font-size: 20px;">
+        RM300
+      </ion-card-subtitle>
+    </ion-card-content>
+  </div>
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 360px;">
+    <ion-col>
+      <ion-button class="cukai-button" style="margin: auto;" expand="block" share="round" (click)="goSubmit()">Back</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<div *ngIf="view == true">
+  <div style="margin-top: 80px" id="e45_203">
+    <ion-card-content>
+      <ion-card-subtitle style="font-style: normal;">
+        Booking Status
+      </ion-card-subtitle>
+      <ion-card-subtitle style="font-size: 20px;">
+        Dewan Serbaguna Perbadanan Labuan
+      </ion-card-subtitle>
+      <ion-row>
+        <ion-col size="7">
+          <ion-card-subtitle style="color: #9C27B0; font-size: 20px;">
+            Approved
+          </ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+      <ion-card-subtitle style="font-style: normal;">
+        31/09/2020 9:00am
+      </ion-card-subtitle>
+    </ion-card-content>
+  </div>
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 420px;">
+    <ion-col>
+      <ion-button class="cukai-button" style="margin: auto;" expand="block" share="round" (click)="goBack()">Back</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+</div>

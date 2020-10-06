@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+  <img class="header" src="assets/images/header.png">
+  <ion-title>Register</ion-title>
+</ion-header>
+
+<ion-content class="footer-account">
+  <div style="margin-top: 15%;">
+    <ion-select class="input-form" [(ngModel)]="type" placeholder="Account Type">
+      <ion-select-option value="personal">Personal</ion-select-option>
+      <ion-select-option value="company">Company</ion-select-option>
+    </ion-select>
+    <ion-input class="input-form" autocomplete="off" type="text" name="fullname" placeholder="Full Name" [(ngModel)]="fullname"></ion-input>
+    <ion-input class="input-form" autocomplete="off" type="text" name="mykad" placeholder="Mykad Number, without '-' " [(ngModel)]="mykad"></ion-input>
+    <ion-input class="input-form" autocomplete="off" type="email" name="email" placeholder="Email" [(ngModel)]="email"></ion-input>
+    <ion-input class="input-form" autocomplete="off" type="password" name="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+    <ion-input class="input-form" autocomplete="off" type="password" name="confirmpassword" placeholder="Confirm Password" [(ngModel)]="confirmpassword"></ion-input>
+    <p class="subtitle">
+      You will receive confirmation email upon successful registration
+    </p>
+  </div>
+  <ion-button style="width: 35%; margin: auto; margin-top: 5%" expand="block" share="round" color="primary" (click)="registerAction()">Register</ion-button>
+</ion-content>

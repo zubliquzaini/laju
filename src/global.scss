@@ -32,9 +32,9 @@
 }
 
 // Content Styling
-ion-content {
-    --background: #f0f0f0;
-}
+// ion-content {
+//     --background: #f0f0f0;
+// }
 
 .menu-home {
     background: white;
@@ -103,6 +103,25 @@ ion-content {
     border-radius: 15px;
     margin: auto;
     margin-top: 5%;
+}
+
+.menu-card {
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    background: #C8E6C9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.menu-card-title {
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+    color: #616161;
 }
 
 // Variable Styling
@@ -273,19 +292,6 @@ ion-content {
     --background-activated: #602100;
 }
 
-#e45_203 { 
-    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color:rgb(255, 21, 21);
-    border:2px solid rgba(161.9117134809494, 171.8482106924057, 177.43749797344208, 1);
-    width:80%;
-    // height:55%;
-    border-radius: 15px;
-    margin: auto;
-    margin-top: 10%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-
 #e45_203-parking{ 
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color:rgba(255, 255, 255, 1);
@@ -310,6 +316,11 @@ ion-content {
 }
 
 // Button Styling
+.account-button {
+    --background: #125285 !important;
+    --background-activated: #1A2A3F;
+}
+
 .complaint-button {
     --background: #607D8B !important;
     --background-activated: #455A64;
@@ -321,7 +332,7 @@ ion-content {
 }
 
 .ferry-button {
-    --background: #009688 !important;
+    --background: #00BCD4 !important;
     --background-activated: #00796B;
 }
 
@@ -330,10 +341,22 @@ ion-content {
     --background-activated: #476e3a;
 }
 
+.cukai-button {
+    --background: #FF4081 !important;
+    --background-activated: #C2185B;
+}
+
 .summon-button {
-    background-color: #F44336 !important;
-    --background-activated: #F44336;
-    font-size: large;
-    width: 280px;
-    height: 60px;
-   }
+    --background: #e3001c !important;
+    --background-activated: #a80000;
+}
+
+.license-button {
+    --background: #FBC02D !important;
+    --background-activated: #CDDC39;
+}
+
+.parking-button {
+    --background: #ff9800 !important;
+    --background-activated: #F57C00;
+}

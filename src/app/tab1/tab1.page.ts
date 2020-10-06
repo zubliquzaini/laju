@@ -1,7 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { IonSlides } from '@ionic/angular';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -37,13 +36,14 @@ export class Tab1Page {
     this.router.navigateByUrl('license');
   }
   goSummonMenu(){
-    this.route.navigateByUrl('summon-menu')
+    this.router.navigateByUrl('summon-menu')
   }
   
   goSummon(){
-    this.route.navigateByUrl('summon')
+    this.router.navigateByUrl('summon')
   }
+  
   goModule(page) {
-    this.router.navigateByUrl(page);
+    this.router.navigateByUrl('/tabs/'+ page);
   }
 }

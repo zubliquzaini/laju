@@ -1,76 +1,85 @@
-<ion-content  style="margin-top: 50px; ">
-  <img style="height: 15%; width: 100%; object-fit: cover; background-color: darkorange;" >
-
-  <div>
-    <ion-row style="padding-top: 10px;">
-      <ion-col size="10"  >
-        <ion-card-subtitle  style="font-size:20px; margin-top: 25px; margin-left: 240px; color:rgb(0, 0, 0);">
-          Parking
+<ion-content [fullscreen]="true">
+  <div style="background-color: #FF9800; height: 25%;"></div>
+</ion-content>
+<div class="menu-module">
+<ion-row>
+  <ion-row>
+    <p class="menu-title-module">Parking</p>
+    <div class="menu-circle-module center parking">
+      <img style="height: 40px" src="assets/images/icons/parking.png">
+    </div>
+  </ion-row>
+</ion-row>
+<div *ngIf="type == true">
+  <ion-row style="margin-top: 60px;">
+    <ion-datetime class="input-form" displayFormat="HH:mm" placeholder="Select Time" [(ngModel)]="time"></ion-datetime>
+    <ion-datetime class="input-form" displayFormat="DD MM YYYY" placeholder="Select Date" [(ngModel)]="date"></ion-datetime>
+  </ion-row>
+  <ion-input class="input-form" autocomplete="off" type="text" name="fullname" placeholder="Plate Number" [(ngModel)]="fullname"></ion-input>
+  <ion-input class="input-form" autocomplete="off" type="text" name="mykad" placeholder="Duration" [(ngModel)]="mykad"></ion-input>
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 360px;">
+    <ion-col>
+      <ion-button class="license-button" style="margin: auto; margin-top: 10px" expand="block" share="round" (click)="goCheck()">Pay Parking</ion-button>
+      <ion-button class="license-button" style="margin: auto; margin-top: 10px" expand="block" share="round" (click)="goView()">Parking History</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<div *ngIf="message == true">
+  <div style="margin-top: 80px">
+    <div id="e45_203">
+      <ion-card-content>
+        <ion-card-subtitle style="font-style: normal;">
+          Parking Payment
         </ion-card-subtitle>
-      </ion-col>
-      <ion-col>
-        <div >
-          <img style="height: 45px" src="assets/images/icons/parking.png">
-        </div>
-      </ion-col>
-    </ion-row>
+        <ion-card-subtitle style="font-size: 20px;">
+          Labuan Airports
+        </ion-card-subtitle>
+        <ion-row>
+          <ion-col size="7">
+            <ion-card-subtitle style="color: #FF9800; font-size: 20px;">
+              RM30
+            </ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+        <ion-card-subtitle style="font-style: normal;">
+          31/09/2020
+        </ion-card-subtitle>
+      </ion-card-content>
+    </div>
   </div>
-
- <div class="col">
- </div>
-
-  <div id="e45_203-parking;  padding-top:5px">
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 360px;">
+    <ion-col>
+      <ion-button class="license-button" style="margin: auto; margin-top: 10px" expand="block" share="round" (click)="goSubmit()">Pay</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<div *ngIf="view == true">
+  <div style="margin-top: 80px" id="e45_203">
     <ion-card-content>
       <ion-card-subtitle>
-        Parking Status
+        Parking History
       </ion-card-subtitle>
-      <ion-card-subtitle style="color: #934B23; font-size: 20px; margin-bottom: 5%;">
-        Plate No: LG5555
-      </ion-card-subtitle>
-      <ion-card-subtitle>
-        <ion-icon name="location-outline"></ion-icon> <span style="padding-left: 10px;">Date : 1/10/2020</span>
+      <ion-card-subtitle style="color: #FBC02D; font-size: 20px; margin-bottom: 5%;">
+        LG5555
       </ion-card-subtitle>
       <ion-card-subtitle>
-        <ion-icon name="calendar-outline"></ion-icon> <span style="padding-left: 10px;">Time : 9.00 am</span>
+        <ion-icon name="location-outline"></ion-icon> <span style="padding-left: 10px;">Pantai Layang-Layang</span>
       </ion-card-subtitle>
       <ion-card-subtitle>
-        <ion-icon name="time-outline"></ion-icon> <span style="padding-left: 10px;">Hour: 8 Hours</span>
+        <ion-icon name="calendar-outline"></ion-icon> <span style="padding-left: 10px;">16/09/2020 - 16/10/2020 </span>
+      </ion-card-subtitle>
+      <ion-card-subtitle>
+        <ion-icon name="time-outline"></ion-icon> <span style="padding-left: 10px;">10:00am - 5:50pm</span>
+      </ion-card-subtitle>
+      <ion-card-subtitle>
+        Total: RM30
       </ion-card-subtitle>
     </ion-card-content>
   </div>
-
-  <div (click)="goRegister()" id="outer-border-menu">
-    <div id="inner-border-parking"></div>
-    <ion-row>
-      <ion-col>
-        <ion-card-title id="menu-title-menu" class="ion-text-center">Parking</ion-card-title>
-      </ion-col>
-    </ion-row>
-  </div>
-  
-  <div (click)="goVehicle()" id="outer-border-menu">
-    <div id="inner-border-parking"></div>
-    <ion-row>
-      <ion-col>
-        <ion-card-title id="menu-title-menu" class="ion-text-center">Vehicles</ion-card-title>
-      </ion-col>
-    </ion-row>
-  </div>
-  
-  <div (click)="goReceipt()" id="outer-border-menu">
-    <div id="inner-border-parking"></div>
-    <ion-row>
-      <ion-col>
-        <ion-card-title id="menu-title-menu" class="ion-text-center">Receipt</ion-card-title>
-      </ion-col>
-    </ion-row>
-  </div>
-  
-</ion-content>
-
-
-
-
-
-
-
+  <ion-row style="width: 80%; margin: auto; position: absolute; left: 35px; top: 420px;">
+    <ion-col>
+      <ion-button class="license-button" style="margin: auto;" expand="block" share="round" (click)="goBack()">Back</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+</div>
