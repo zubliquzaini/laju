@@ -24,3 +24,58 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+// Header Styling
+.header-home {
+    --background: #125285;
+    --color: #ffffff;
+}
+
+// Content Styling
+ion-content {
+    --background: #f0f0f0;
+}
+
+// Variable Styling
+.shadow {
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.55);
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Color styling
+.parking {
+    background-color: #FF9800;
+}
+
+.license {
+    background-color: #FFEB3B;
+}
+
+.summon {
+    background-color: #F44336;
+}
+
+.cukai {
+    background-color: #E91E63;
+}
+
+.zakat {
+    background-color: #4CAF50;
+}
+
+.ferry {
+    background-color: #00BCD4;
+}
+
+.hall {
+    background-color: #9C27B0;
+}
+
+.complaint {
+    background-color: #9E9E9E;
+}

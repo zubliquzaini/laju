@@ -1,17 +1,113 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <img style="height: 25%; width: 100%; object-fit: cover;" src="assets/images/laju.png">
 </ion-content>
+    <div class="menu-home">
+      <ion-row>
+        <ion-col>
+          <ion-row>
+            <div class="menu-circle-home center parking">
+              <img style="height: 40px" src="assets/images/icons/parking.png">
+            </div>
+          </ion-row>
+          <ion-row>
+            <p class="menu-text-home">Parking</p>
+          </ion-row>
+        </ion-col>
+        <ion-col>
+          <ion-row>
+            <div class="menu-circle-home center license">
+              <img style="height: 40px" src="assets/images/icons/driver-license.png">
+            </div>
+          </ion-row>
+          <ion-row>
+            <p class="menu-text-home">License</p>
+          </ion-row>
+        </ion-col>
+        <ion-col>
+          <ion-row>
+            <div class="menu-circle-home center summon">
+              <img style="height: 40px" src="assets/images/icons/policeman.png">
+            </div>
+          </ion-row>
+          <ion-row>
+            <p class="menu-text-home">Summon</p>
+          </ion-row>
+        </ion-col>
+        <ion-col>
+          <ion-row>
+            <div class="menu-circle-home center cukai">
+              <img style="height: 40px" src="assets/images/icons/taxes.png">
+            </div>
+          </ion-row>
+          <ion-row>
+            <p class="menu-text-home">Cukai</p>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-row>
+            <div class="menu-circle-home center zakat">
+              <img style="height: 40px" src="assets/images/icons/cash.png">
+            </div>
+          </ion-row>
+          <ion-row>
+            <p class="menu-text-home">Zakat</p>
+          </ion-row>
+        </ion-col>
+        <ion-col>
+          <ion-row>
+            <div class="menu-circle-home center ferry">
+              <img style="height: 40px" src="assets/images/icons/ship.png">
+            </div>
+          </ion-row>
+          <ion-row>
+            <p class="menu-text-home">Ferry Ticket</p>
+          </ion-row>
+        </ion-col>
+        <ion-col>
+          <ion-row>
+            <div class="menu-circle-home center hall">
+              <img style="height: 40px" src="assets/images/icons/hall.png">
+            </div>
+          </ion-row>
+          <ion-row>
+            <p class="menu-text-home">Hall</p>
+          </ion-row>
+        </ion-col>
+        <ion-col>
+          <ion-row>
+            <div class="menu-circle-home center complaint">
+              <img style="height: 40px" src="assets/images/icons/complaint.png">
+            </div>
+          </ion-row>
+          <ion-row>
+            <p class="menu-text-home">Complaint</p>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-slides pager #slides class="slides" (ionSlidesDidLoad)="slidesDidLoad(slides)">
+          <ion-slide>
+            <img class="shadow" src="assets/images/1.jpg">
+          </ion-slide>
+
+          <ion-slide>
+            <img class="shadow" src="assets/images/2.png">
+          </ion-slide>
+
+          <ion-slide>
+            <img class="shadow" src="assets/images/3.png">
+          </ion-slide>
+
+          <ion-slide>
+            <img class="shadow" src="assets/images/4.png">
+          </ion-slide>
+
+          <ion-slide>
+            <img class="shadow" src="assets/images/5.jpg">
+          </ion-slide>
+        </ion-slides>
+      </ion-row>
+    </div>
+
