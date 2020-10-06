@@ -184,6 +184,131 @@ ion-content {
     background-color: #9E9E9E;
 }
 
+#e45_203-mini { 
+    box-shadow:0px 4px 4px rgba(48, 47, 47, 0.25);
+    background-color:rgba(255, 255, 255, 1);
+    border:2px solid rgba(161.9117134809494, 171.8482106924057, 177.43749797344208, 1);
+    width:80%;
+    // height:55%;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 10%;
+    // padding-top: 10%;
+    // padding-bottom: 10%;
+}
+
+#outer-border { 
+    position:relative;
+    opacity:1;
+    margin: auto;
+    margin-top: 5%;
+    width:80%;
+    height:90px;
+}
+
+#outer-border-menu { 
+    position:relative;
+    opacity:1;
+    margin: auto;
+    margin-top: 5%;
+    width:90%;
+    height:70px;
+}
+
+#inner-border { 
+    box-shadow:0px 4px 4px rgba(23.999998569488525, 79.00001049041748, 121.00000038743019, 0.41999998688697815);
+    background-color:rgba(24.000000469386578, 79.00000289082527, 121.00000038743019, 1);
+    opacity:1;
+    width:100%;
+    height:90px;
+    position:absolute;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+#inner-border-parking { 
+    box-shadow:0px 4px 4px #476e3a;
+    background-color: darkorange;
+    opacity:1;
+    width:100%;
+    height:60px;
+    position:absolute;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+#inner-border-license { 
+    box-shadow:0px 4px 4px #476e3a;
+    background-color: yellow;
+    opacity:1;
+    width:100%;
+    height:60px;
+    position:absolute;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+#menu-title-menu {
+    margin-top: 15px;
+    font-size: 20px;
+    font-style: bold;
+    color: rgb(0, 0, 0);
+}
+
+.col{
+   border: 1px solid rgb(223, 223, 223);
+   width: 365px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+.license-button {
+    --background: #934B23 !important;
+    --background-activated: #602100;
+}
+
+#e45_203 { 
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color:rgb(255, 21, 21);
+    border:2px solid rgba(161.9117134809494, 171.8482106924057, 177.43749797344208, 1);
+    width:80%;
+    // height:55%;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#e45_203-parking{ 
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color:rgba(255, 255, 255, 1);
+    border:2px solid rgba(161.9117134809494, 171.8482106924057, 177.43749797344208, 1);
+    width:80%;
+    height:25%;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.parking-button {
+    --background: #DD3F02 !important;
+    --background-activated: #a30000;
+}
+
+.parking-button-dark {
+    --background: #a30000 !important;
+    --background-activated: #DD3F02;
+}
+
 // Button Styling
 .complaint-button {
     --background: #607D8B !important;

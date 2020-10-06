@@ -29,6 +29,13 @@ export class Tab1Page {
     slides.startAutoplay();
   }
 
+  goParking() {
+    this.router.navigateByUrl('parking');
+  }
+
+  goLicense() {
+    this.router.navigateByUrl('license');
+  }
   goSummonMenu(){
     this.route.navigateByUrl('summon-menu')
   }

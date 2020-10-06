@@ -1,0 +1,59 @@
+<ion-content  style="margin-top: 50px; ">
+  <img style="height: 15%; width: 100%; object-fit: cover; background-color: darkorange;" >
+
+  <ion-input class="input-form" autocomplete="off" type="text" name="plateno" placeholder="Plate Number" [(ngModel)]="plateno"></ion-input>
+  <div class="menu-border ion-text-center">
+    <ion-card-title style="font-size: medium; margin-bottom: 5px;">Labuan Parking Rate</ion-card-title>
+    <ion-card-subtitle>1 Hour = RM0.60</ion-card-subtitle>
+    <ion-card-subtitle>1 Day = RM14.40</ion-card-subtitle>
+  </div>
+  <ion-card-title style="font-size: medium; margin: 20px;" class="ion-text-center">Labuan Duration</ion-card-title>
+  <div style="width: 80%;" class="duration-select">
+    <ion-row>
+      <ion-col size="3">
+        <ion-button class="parking-button" size="small">1 hour</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button class="parking-button" size="small">2 hours</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button class="parking-button" size="small">3 hours</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button class="parking-button" size="small">4 hours</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">
+        <ion-button class="parking-button" size="small">5 hours</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button class="parking-button" size="small">6 hours</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button class="parking-button" size="small">7 hours</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button class="parking-button" size="small">8 hours</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col size="3">
+        <ion-button class="parking-button" style="width: 100%;" size="small">1 day</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button class="parking-button" size="small">1 month</ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </div>
+  <ion-button class="parking-button-dark" style="position: absolute; left: 10%; bottom: 15%; width: 80%;" expand="block" share="round" (click)="goPayment()">Pay now</ion-button>
+</ion-content>
+
+
+
+
+
+
+
