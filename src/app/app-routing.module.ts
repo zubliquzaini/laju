@@ -7,6 +7,18 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
+    path: 'summon-menu',
+    loadChildren: () => import('./summon-menu/summon-menu.module').then( m => m.SummonMenuPageModule)
+  },
+  {
+    path: 'summon',
+    loadChildren: () => import('./summon/summon.module').then( m => m.SummonPageModule)
+  },
+  {
+    path: 'compound',
+    loadChildren: () => import('./compound/compound.module').then( m => m.CompoundPageModule)
+  },
+  {
     path: 'complaint',
     loadChildren: () => import('./complaint/complaint.module').then( m => m.ComplaintPageModule)
   },
@@ -26,6 +38,7 @@ const routes: Routes = [
     path: 'zakat-payment',
     loadChildren: () => import('./zakat-payment/zakat-payment.module').then( m => m.ZakatPaymentPageModule)
   }
+
 ];
 @NgModule({
   imports: [
